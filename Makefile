@@ -41,6 +41,9 @@ prod-services:
 
 $(foreach SERVICE,$(SERVICES),$(eval $(SERVICE_RULES)))
 
+all: lint test-ci-unit m3nsch_client m3nsch_server
+	@echo "Making all"
+
 lint:
 	@which golint > /dev/null || go get -u github.com/golang/lint/golint
 	$(VENDOR_ENV) $(lint_check)
@@ -77,4 +80,4 @@ clean:
 	echo
 
 .DEFAULT_GOAL := test
-.PHONY: test test-xml test-internal testhtml clean
+.PHONY: test test-xml test-internal testhtml clean all
