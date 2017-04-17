@@ -9,3 +9,4 @@ sudo: required
 dist: trusty
 script:
  - make all
+ 
