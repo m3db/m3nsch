@@ -13,7 +13,7 @@ junit_xml := junit.xml
 test_log := test.log
 lint_check := .ci/lint.sh
 
-BUILD := $(abspath ./out)
+BUILD := $(abspath ./bin)
 LINUX_AMD64_ENV := GOOS=linux GOARCH=amd64 CGO_ENABLED=0
 VENDOR_ENV := GO15VENDOREXPERIMENT=1
 
