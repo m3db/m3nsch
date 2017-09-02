@@ -98,7 +98,7 @@ clean:
 	echo
 
 .PHONY: all
-all: lint test-ci-unit m3nsch_client m3nsch_server
+all: lint metalint test-ci-unit services
 	@echo "Making all"
 
 .DEFAULT_GOAL := all
