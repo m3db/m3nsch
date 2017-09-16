@@ -1,5 +1,5 @@
-hash: 5d96592ac14b6bc3b7a9f2d3d29725b835bbc7b6920dec3e7d4e7051a12de554
-updated: 2017-09-15T12:14:51.255036972-04:00
+hash: 94bd7df44f154890e4298d77619c8bd61560d75b167a6a77b2abaafa02205f77
+updated: 2017-09-16T13:30:50.200341586-04:00
 imports:
 - name: github.com/apache/thrift
   version: 53dd39833a08ce33582e5ff31fa18bb4735d6731
@@ -55,7 +55,7 @@ imports:
   - services/leader/campaign
   - shard
 - name: github.com/m3db/m3db
-  version: 2df806ff1a50499ccc105a5ebadbb43ed200f7b3
+  version: 774977eac740d655fecddc99cc8fc2c44468ff4e
   subpackages:
   - client
   - clock
