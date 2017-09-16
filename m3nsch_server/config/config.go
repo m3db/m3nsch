@@ -22,6 +22,7 @@ package config
 
 import (
 	"github.com/m3db/m3x/instrument"
+
 	"github.com/spf13/viper"
 	validator "gopkg.in/validator.v2"
 )
