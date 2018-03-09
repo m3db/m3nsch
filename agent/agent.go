@@ -25,10 +25,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/m3db/m3x/ident"
-
 	"github.com/m3db/m3nsch"
 	"github.com/m3db/m3nsch/datums"
+	"github.com/m3db/m3x/ident"
 
 	"github.com/gavv/monotime"
 	"github.com/m3db/m3db/client"
