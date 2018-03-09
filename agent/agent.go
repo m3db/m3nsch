@@ -25,6 +25,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/m3db/m3x/ident"
+
 	"github.com/m3db/m3nsch"
 	"github.com/m3db/m3nsch/datums"
 
@@ -351,5 +353,5 @@ type agentMetrics struct {
 type workerFn func(workerIdx int, session client.Session, namespace string, metric generatedMetric, t time.Time, u xtime.Unit) error
 
 func workerWriteFn(_ int, session client.Session, namespace string, metric generatedMetric, t time.Time, u xtime.Unit) error {
-	return session.Write(namespace, metric.name, t, metric.timeseries.Next(), u, nil)
+	return session.Write(ident.StringID(namespace), ident.StringID(metric.name), t, metric.timeseries.Next(), u, nil)
 }
