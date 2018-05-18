@@ -12,7 +12,7 @@ import:
   subpackages:
   - client
 - package: github.com/m3db/m3x
-  version: a3695ff2d9696fcd9fffca878b9b544e68c4b1ef
+  version: df82cd7aacfd8439586821ecd6e073da35bfbb02
   subpackages:
   - errors
   - instrument

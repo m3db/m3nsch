@@ -1,12 +1,12 @@
-hash: 7be68255a4b4737db2a327ac9cc144ce2c8bbc20f4a4185ef9ba956b97c0beef
-updated: 2018-03-09T01:53:07.052332117-05:00
+hash: 6ab8846f968a1aa13e3149beffe72a21d9bf4b0c897197bedd2d27c71dc8855c
+updated: 2018-05-18T15:51:38.069493-04:00
 imports:
 - name: github.com/apache/thrift
   version: 53dd39833a08ce33582e5ff31fa18bb4735d6731
   subpackages:
   - lib/go/thrift
 - name: github.com/beorn7/perks
-  version: 4c0e84591b9aa9e6dcfdf3e020114cd81f89d5f9
+  version: 3ac7bf7a47d159a033b107610db8a1b6575507a4
   subpackages:
   - quantile
 - name: github.com/coreos/etcd
@@ -25,8 +25,6 @@ imports:
   version: adab96458c51a58dc1783b3335dcce5461522e75
   subpackages:
   - spew
-- name: github.com/facebookgo/clock
-  version: 600d898af40aa09a7a93ecb9265d87b0504b6f03
 - name: github.com/fsnotify/fsnotify
   version: 30411dbcefb7a1da7e84f75530ad3abe4011b4f8
 - name: github.com/gavv/monotime
@@ -35,12 +33,8 @@ imports:
   version: 73d445a93680fa1a78ae23a5839bad48f32ba1ee
 - name: github.com/glycerine/go-unsnap-stream
   version: 62a9a9eb44fd8932157b1a8ace2149eff5971af6
-- name: github.com/go-ole/go-ole
-  version: a41e3c4b706f6ae8dfbff342b06e40fa4d2d0506
-  subpackages:
-  - oleutil
 - name: github.com/golang/mock
-  version: 13f360950a79f5864a972c786a10a50e44b69541
+  version: c34cdb4725f4c3844d095133c6e40e448b86589b
   subpackages:
   - gomock
 - name: github.com/golang/protobuf
@@ -50,7 +44,7 @@ imports:
   - proto
   - ptypes/timestamp
 - name: github.com/golang/snappy
-  version: d7b1e156f50d3c4664f683603af70e3e47fa0aa2
+  version: d9eb7a3d35ec988b8585d4a0068e462c27d28380
 - name: github.com/grpc-ecosystem/go-grpc-prometheus
   version: 6b7015e65d366bf3f19b2b2a000a831940f0f7e0
 - name: github.com/grpc-ecosystem/grpc-gateway
@@ -130,7 +124,7 @@ imports:
   - doc
   - index/segment
 - name: github.com/m3db/m3x
-  version: a3695ff2d9696fcd9fffca878b9b544e68c4b1ef
+  version: df82cd7aacfd8439586821ecd6e073da35bfbb02
   subpackages:
   - checked
   - clock
@@ -153,7 +147,7 @@ imports:
 - name: github.com/magiconair/properties
   version: b3b15ef068fd0b17ddf408a23669f20811d194d2
 - name: github.com/matttproud/golang_protobuf_extensions
-  version: c12348ce28de40eed0136aa2b644d0ee0650e56c
+  version: fc2b8d3a73c4867e51861bbdd5ae3c1f0869dd6a
   subpackages:
   - pbutil
 - name: github.com/mitchellh/mapstructure
@@ -167,7 +161,7 @@ imports:
 - name: github.com/pborman/getopt
   version: ec82d864f599c39673eef89f91b93fa5576567a1
 - name: github.com/pelletier/go-buffruneio
-  version: c37440a7cf42ac63b919c752ca73a85067e05992
+  version: e2f66f8164ca709d4c21e815860afd2024e9b894
 - name: github.com/pelletier/go-toml
   version: 3b00596b2e9ee541bbd72dc50cc0c60e2b46c69c
 - name: github.com/philhofer/fwd
@@ -194,17 +188,6 @@ imports:
   version: 1878d9fbb537119d24b21ca07effd591627cd160
 - name: github.com/RoaringBitmap/roaring
   version: 4bbba8874933b985c9160558fddea525dde73e63
-- name: github.com/shirou/gopsutil
-  version: c432be29ccce470088d07eea25b3ea7e68a8afbb
-  subpackages:
-  - cpu
-  - host
-  - internal/common
-  - mem
-  - net
-  - process
-- name: github.com/shirou/w32
-  version: bb4de0191aa41b5507caa14b0650cdbddcd9280b
 - name: github.com/spaolacci/murmur3
   version: 9f5d223c60793748f04a9d5b4b4eacddfc1f755d
 - name: github.com/spf13/afero
@@ -221,8 +204,6 @@ imports:
   version: 4f9190456aed1c2113ca51ea9b89219747458dc1
 - name: github.com/spf13/viper
   version: 7538d73b4eb9511d85a9f1dfef202eeb8ac260f4
-- name: github.com/StackExchange/wmi
-  version: 5d049714c4a64225c3c79a7cf7d02f7fb5b96338
 - name: github.com/stretchr/testify
   version: 6fe211e493929a8aac0469b93f28b1d0688a9a3a
   subpackages:
@@ -233,9 +214,9 @@ imports:
   subpackages:
   - msgp
 - name: github.com/uber-go/atomic
-  version: 8474b86a5a6f79c443ce4b2992817ff32cf208b8
+  version: 1ea20fb1cbb1cc08cbd0d913a96dead89aa18289
 - name: github.com/uber-go/tally
-  version: 522328b48efad0c6034dba92bf39228694e9d31f
+  version: 79f2a33b0e55b1255ffbbaf824dcafb09ff34dda
   subpackages:
   - m3
   - m3/customtransports
@@ -255,7 +236,7 @@ imports:
 - name: github.com/willf/bitset
   version: 1ea0245d2bc8ce44623f24a1ae162beb06ad8cd6
 - name: go.uber.org/atomic
-  version: 8474b86a5a6f79c443ce4b2992817ff32cf208b8
+  version: 1ea20fb1cbb1cc08cbd0d913a96dead89aa18289
 - name: go.uber.org/multierr
   version: 3c4937480c32f4c13a875a1829af76c98ca3d40a
 - name: go.uber.org/zap
@@ -287,9 +268,8 @@ imports:
   vcs: git
   subpackages:
   - unix
-  - windows
 - name: golang.org/x/text
-  version: b7ef84aaf62aa3e70962625c80a571ae7c17cb40
+  version: 2bf8f2a19ec09c670e931282edfe6567f6be21c9
   subpackages:
   - transform
   - unicode/norm
@@ -307,5 +287,5 @@ imports:
 - name: gopkg.in/validator.v2
   version: 3e4f037f12a1221a0864cf0dd2e81c452ab22448
 - name: gopkg.in/yaml.v2
-  version: a83829b6f1293c91addabc89d0571c246397bbf4
+  version: 5420a8b6744d3b0345ab293f6fcba19c978f1183
 testImports: []
